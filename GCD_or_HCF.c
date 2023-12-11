@@ -1,16 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,i,m,gcd;
+    int i,n,a,b,c,m,d;
     scanf("%d%d",&a,&b);
+    c=a*b;
+    d=a+b;
     for(i=1;i<=b;i++)
-   {
-      m=i*a; 
-      if(m%b==0)
-      {
-          break;
-      }
-   }
-    gcd=(a*b)/m;
-    printf("%d",gcd);
+    {
+        m=i*a;
+            if(m%b==0)
+            {
+                break;
+            }
+    }
+    n=a*b/m;
+    printf("%d",n);
 }
