@@ -1,21 +1,21 @@
 #include<stdio.h>
 int main()
 {
-    int i,N,sum=0,multi=1,r;
-    scanf("%d",&N);
-    while(N!=0)
+    int i,n,s=0,r,mul=1;
+    scanf("%d",&n);
+    while(n!=0)
     {
-        r=N%10;
-        sum=sum+r;
-        multi=multi*r;
-        N=N/10;
+        r=n%10;
+        s=s+r;
+        mul=mul*r;
+        n=n/10;
     }
-    if(sum == multi)
-    {
-        printf("Spy Number");
-    }
-    else
-    {
-        printf("Not Spy Number");
-    }
-}   
+        if(s==mul)
+        {
+            printf("Spy Number");
+        }
+        else
+        {
+            printf("Not Spy Number");
+        }
+}
