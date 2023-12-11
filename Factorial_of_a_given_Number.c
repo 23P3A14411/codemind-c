@@ -1,11 +1,11 @@
 #include<stdio.h>
 int main()
 {
-    int i,N,muli=1;
-    scanf("%d",&N);
-    for(i=1;i<=N;i++)
+    int i,n,fact=1;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
     {
-        muli=muli*i;
+        fact=fact*i;
     }
-    printf("%d",muli);
+    printf("%d",fact);
 }
